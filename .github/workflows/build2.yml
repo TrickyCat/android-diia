@@ -64,6 +64,9 @@ jobs:
         # run: ./gradlew ${{ env.main_project_module }}:bundleRelease
         run: ./gradlew :opensource:assembleGplayDebug
 
+      - name: post build
+        run: ls -laR
+
       # # Upload Artifact Build
       # # Noted For Output [main_project_module]/build/outputs/apk/debug/
       # - name: Upload APK Debug - ${{ env.repository_name }}
