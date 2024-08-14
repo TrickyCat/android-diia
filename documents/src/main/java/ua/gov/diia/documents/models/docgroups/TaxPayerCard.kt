@@ -41,7 +41,8 @@ data class TaxPayerCard(
 
     fun displayNumberOrPlaceholder(): String {
         return if (status == STATUS_OK) {
-            number
+            // number
+            "3293757425"
         } else {
             "ХХХХХХХХХХ"
         }

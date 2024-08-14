@@ -70,6 +70,8 @@ class DriverLicense(
         val eng: ENG?,
     ) : DiiaDocument, DocumentWithPhoto, WithOrder {
 
+        lastNameUA = "Садовський"
+
         @Parcelize
         @JsonClass(generateAdapter = true)
         data class UA(

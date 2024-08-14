@@ -39,7 +39,7 @@ data class DiiaDocumentWithMetadata(
     }
 
     override val id: String
-        get() = diiaDocument?.id ?: Preferences.DEF
+        get() = "ВК 256284" //diiaDocument?.id ?: Preferences.DEF
 
     override fun getStatus() = status
 
