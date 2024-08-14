@@ -50,8 +50,8 @@ class DriverLicense(
         val serial: String?,
         @Json(name = "number")
         val number: String?,
-        //@Json(name = "lastNameUA")
-        //val lastNameUA: String?,
+        @Json(name = "lastNameUA")
+        val lastNameUA: String?,
         @Json(name = "firstNameUA")
         val firstNameUA: String?,
         @Json(name = "middleNameUA")
@@ -70,7 +70,8 @@ class DriverLicense(
         val eng: ENG?,
     ) : DiiaDocument, DocumentWithPhoto, WithOrder {
 
-        lastNameUA = "Садовський"
+        // dmd
+        //lastNameUA = "Садовський"
 
         @Parcelize
         @JsonClass(generateAdapter = true)
